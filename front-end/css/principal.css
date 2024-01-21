@@ -73,6 +73,55 @@ body {
 	margin: 0 auto;
 }
 
+/* Modal */
+#areaFundoModal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(0, 0, 0, .6);
+	width: 100%;
+	height: 100%;
+}
+
+.area-modal,
+#botaoFecharModal {
+	border-radius: .7rem;
+}
+
+.area-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	width: 25rem;
+	max-width: 90%;
+	padding: 1.2rem;
+}
+
+#msgModal {
+	display: block;
+	font-size: 1.1rem;
+	min-height: 4rem;
+	margin-bottom: .6rem;
+}
+
+#botaoFecharModal {
+	float: right;
+	font-size: .9rem;
+	color: #fff;
+	background: #c84755;
+	padding: .7rem .9rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#botaoFecharModal:hover {
+	background: #a43F4a;
+}
+
 /* Rodapé */
 .rodape {
 	text-align: center;
@@ -92,6 +141,11 @@ body {
 
 .link-creditos-desenvolvedor:hover {
 	text-decoration: underline;
+}
+
+/* Estilos adicionais (JavaScript) */
+#areaFundoModal.ativo {
+	display: block;
 }
 
 /* Responsividade */

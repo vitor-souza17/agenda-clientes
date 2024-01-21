@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Página de cadastro da plataforma Agenda de Clientes">
+	<meta name="keywords" content="agendamentos, horários, clientes, cadastro">
+	<meta name="author" content="Vitor Souza">
+	<title>Agenda de Clientes - Cadastre-se!</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/principal.css">
+	<link rel="stylesheet" href="css/cadastro.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+	<!-- JavaScript -->
+	<script src="javascript/principal.js" defer></script>
+	<script src="javascript/cadastro.js" defer></script>
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="cabecalho">
+		<img src="imagens/logo.svg" alt="Ícone de calendário" class="imagem-logo">
+		<h1 class="titulo-principal">Agenda de Clientes</h1>
+	</header>
+
+	<!-- Barra de navegação -->
+	<nav id="barraNav">
+		<div class="area-links-nav">
+			<a href="#" class="link-nav">
+				<i class="bi bi-house"></i> Home
+			</a>
+			<a href="#" class="link-nav">
+				<i class="bi bi-file-earmark-person"></i> Sobre o Desenvolvedor
+			</a>
+			<a href="#" class="link-nav">
+				<i class="bi bi-box-arrow-in-right"></i> Entrar
+			</a>
+		</div>
+		<div class="area-botao-menu">
+			<a href="javascript:void()" id="botaoMenu">
+				<i class="bi bi-list" id="iconeMenu"></i>
+			</a>
+		</div>
+	</nav>
+
+	<!-- Conteúdo principal -->
+	<main class="conteudo-principal">
+		<section class="secao-formulario">
+			<header class="cabecalho-secao-formulario">
+				<h2 class="titulo-secao-formulario">
+					Cadastre-se! <i class="bi bi-emoji-smile"></i>
+				</h2>
+			</header>
+			<form id="formulario">
+				<div class="area-campos">
+					<label for="campoUsuario" class="label">
+						Usuário: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="text" name="usuario" id="campoUsuario" class="input" placeholder="Digite um nome de usuário..." maxlength="50" required>
+				</div>
+				<div class="area-campos">
+					<label for="campoSenha" class="label">
+						Senha: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha" id="campoSenha" class="input" placeholder="Digite uma senha..." minlength="8" maxlength="50" required>
+					<div class="area-mostrar-senha">
+						<i class="bi bi-circle" id="iconeMostrarSenha"></i>
+						<span id="textoMostrarSenha">Mostrar senha</span>
+					</div>
+				</div>
+				<button type="submit" class="botao-submit">
+					Cadastrar-se <i class="bi bi-person-add"></i>
+				</button>
+			</form>
+		</section>
+	</main>
+
+	<!-- Modal -->
+	<div id="areaFundoModal">
+		<div class="area-modal">
+			<span id="msgModal"></span>
+			<button type="button" id="botaoFecharModal">Fechar</button>
+		</div>
+	</div>
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<p class="creditos-desenvolvedor">
+			Desenvolvido por <a href="https://github.com/vitor-souza17" class="link-creditos-desenvolvedor">Vitor Souza</a>. Todos os direitos reservados.
+		</p>
+	</footer>
+</body>
+</html>
