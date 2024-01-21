@@ -1,0 +1,3 @@
+Link de créditos da imagem da home:
+
+<a href="https://storyset.com/event" target="_blank" class="link-creditos-imagem-destaque">Storyset</a>

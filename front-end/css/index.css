@@ -1,0 +1,170 @@
+.conteudo-principal {
+	display: flex;
+	align-items: center;
+	gap: 4%;
+}
+
+.secao-introducao,
+.area-imagem-destaque {
+	width: 48%;
+}
+
+.titulo-secao-introducao,
+.texto-secao-introducao {
+	margin-bottom: 1.5rem;
+}
+
+.titulo-secao-introducao {
+	font-size: 3rem;
+}
+
+.texto-secao-introducao {
+	font-size: 1.5rem;
+}
+
+.area-botoes-secao-introducao {
+	display: flex;
+	gap: 1rem;
+}
+
+.botao-secao-introducao {
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: #fff;
+	background: #c84755;
+	padding: 1rem 1.1rem;
+	border: 2px solid transparent;
+	border-radius: .7rem;
+	transition: .5s;
+}
+
+.botao-secao-introducao:hover {
+	color: #c84755;
+	background: transparent;
+	border-color: #c84755;
+}
+
+.area-imagem-destaque {
+	text-align: center;
+}
+
+.imagem-destaque {
+	display: inline-block;
+}
+
+.link-creditos-imagem-destaque {
+	text-decoration: none;
+	color: #c84755;
+}
+
+.link-creditos-imagem-destaque:hover {
+	text-decoration: underline;
+}
+
+/* Responsividade */
+
+/* 
+	Dispositivos bem pequenos e pequenos (celulares (pequenos e grandes) e tablets em modo retrato,
+	600px e abaixo/600px e acima)
+*/
+@media only screen and (max-width: 600px), (min-width: 600px) {
+	.conteudo-principal {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.secao-introducao {
+		text-align: center;
+	}
+
+	.titulo-secao-introducao {
+		font-size: 2rem;
+	}
+
+	.texto-secao-introducao {
+		font-size: 1.2rem;
+	}
+
+	.area-botoes-secao-introducao {
+		justify-content: center;
+	}
+
+	.botao-secao-introducao {
+		font-size: 1.1rem;
+		padding: .8rem .9rem;
+	}
+}
+
+/* Dispositivos bem pequenos (celulares pequenos, 600px e abaixo) */
+@media only screen and (max-width: 600px) {
+	.secao-introducao,
+	.area-imagem-destaque {
+		width: 100%;
+	}
+}
+
+/* Dispositivos pequenos (celulares grandes e tablets em modo retrato, 600px e acima) */
+@media only screen and (min-width: 600px) {
+	.secao-introducao,
+	.area-imagem-destaque {
+		width: 70%;
+	}
+}
+
+/* Dispositivos médios (tablets em modo paisagem, 768px e acima) */
+@media only screen and (min-width: 768px) {
+	.secao-introducao,
+	.area-imagem-destaque {
+		width: 60%;
+	}
+}
+
+/* Dispositivos grandes (notebooks e desktops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+	.conteudo-principal {
+		flex-direction: row;
+		gap: 4%;
+	}
+
+	.secao-introducao,
+	.area-imagem-destaque {
+		width: 48%;
+	}
+
+	.secao-introducao {
+		text-align: left;
+	}
+
+	.titulo-secao-introducao {
+		font-size: 2.5rem;
+	}
+
+	.texto-secao-introducao {
+		font-size: 1.4rem;
+	}
+
+	.area-botoes-secao-introducao {
+		justify-content: flex-start;
+	}
+
+	.botao-secao-introducao {
+		font-size: 1.2rem;
+		padding: .9rem 1rem;
+	}
+}
+
+/* Dispositivos bem grandes (notebooks e desktops grandes, 1200px e acima) */
+@media only screen and (min-width: 1200px) {
+	.titulo-secao-introducao {
+		font-size: 3rem;
+	}
+
+	.texto-secao-introducao {
+		font-size: 1.5rem;
+	}
+
+	.botao-secao-introducao {
+		font-size: 1.3rem;
+		padding: 1rem 1.1rem;
+	}	
+}

@@ -1,0 +1,7 @@
+Regra de importação:
+
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+Regra para aplicação:
+
+font-family: "Salsa", cursive;
