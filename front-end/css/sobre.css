@@ -1,0 +1,53 @@
+.secao-sobre-desenvolvedor,
+.secao-informacoes-contato-desenvolvedor {
+	text-align: center;
+	width: 60rem;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.secao-sobre-desenvolvedor {
+	margin-bottom: 2rem;
+}
+
+.imagem-desenvolvedor,
+.link-github-desenvolvedor {
+	display: inline-block;
+}
+
+.imagem-desenvolvedor {
+	width: 12rem;
+	border-radius: 50%;
+}
+
+.imagem-desenvolvedor,
+.titulo-secao-sobre-desenvolvedor,
+.titulo-secao-informacoes-contato-desenvolvedor {
+	margin-bottom: 1.5rem;
+}
+
+.titulo-secao-sobre-desenvolvedor,
+.titulo-secao-informacoes-contato-desenvolvedor {
+	font-size: 1.8rem;
+}
+
+.informacoes-sobre-desenvolvedor {
+	line-height: 1.4rem;
+}
+
+.link-github-desenvolvedor {
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #fff;
+	background: #c84755;
+	padding: 1rem 1.1rem;
+	border: 2px solid transparent;
+	border-radius: .7rem;
+	transition: .5s;
+}
+
+.link-github-desenvolvedor:hover {
+	color: #c84755;
+	background: transparent;
+	border-color: #c84755;
+}

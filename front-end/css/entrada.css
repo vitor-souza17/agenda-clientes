@@ -1,0 +1,95 @@
+.secao-formulario,
+.input,
+.botao-submit {
+	border-radius: .7rem;
+}
+
+.secao-formulario,
+.input {
+	border: 1px solid #ddd;
+}
+
+.secao-formulario,
+.botao-submit {
+	margin: 0 auto;
+}
+
+.secao-formulario {
+	background: #fff;
+	width: 25rem;
+	max-width: 100%;
+	padding: 1.2rem;
+}
+
+.cabecalho-secao-formulario,
+.area-campos {
+	margin-bottom: 1.2rem;
+}
+
+.cabecalho-secao-formulario {
+	text-align: center;
+	padding-bottom: 1.2rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.titulo-secao-formulario {
+	font-size: 1.6rem;
+}
+
+.label {
+	display: inline-block;
+	font-size: 1.1rem;
+	margin-bottom: .5rem;
+}
+
+.campo-obrigatorio {
+	color: #c84755;
+}
+
+.input {
+	display: block;
+	font-size: 1rem;
+	width: 100%;
+	padding: .7rem;
+}
+
+.input:focus {
+	outline: 0;
+}
+
+#campoSenha {
+	margin-bottom: .6rem;
+}
+
+.area-mostrar-senha {
+	display: flex;
+	align-items: center;
+	gap: .2rem;
+}
+
+#iconeMostrarSenha,
+#textoMostrarSenha {
+	font-size: .9rem;
+}
+
+#iconeMostrarSenha,
+#textoMostrarSenha,
+.botao-submit {
+	cursor: pointer;
+}
+
+.botao-submit {
+	display: block;
+	font-size: 1.1rem;
+	color: #fff;
+	background: #c84755;
+	padding: .8rem 1rem;
+	border: 2px solid transparent;
+	transition: .5s;
+}
+
+.botao-submit:hover {
+	color: #c84755;
+	background: transparent;
+	border-color: #c84755;
+}
