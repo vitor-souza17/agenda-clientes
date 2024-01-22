@@ -1,51 +1,49 @@
+/* Conteúdo principal */
 .conteudo-principal {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	gap: 4%;
 }
 
-.secao-introducao,
-.area-imagem-destaque {
+.secao-introducao {
 	width: 48%;
 }
 
-.titulo-secao-introducao,
-.texto-secao-introducao {
+.titulo-sec-introducao {
+	font-size: 2.8rem;
 	margin-bottom: 1.5rem;
 }
 
-.titulo-secao-introducao {
-	font-size: 3rem;
-}
-
-.texto-secao-introducao {
+.txt-sec-introducao {
 	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
-.area-botoes-secao-introducao {
+.area-botoes-sec-introducao {
 	display: flex;
 	gap: 1rem;
 }
 
-.botao-secao-introducao {
-	font-size: 1.3rem;
+.botao-sec-introducao {
+	font-size: 1.1rem;
 	text-decoration: none;
 	color: #fff;
-	background: #c84755;
-	padding: 1rem 1.1rem;
+	background-color: #c84755;
+	padding: 1rem 1.2rem;
 	border: 2px solid transparent;
 	border-radius: .7rem;
 	transition: .5s;
 }
 
-.botao-secao-introducao:hover {
+.botao-sec-introducao:hover {
 	color: #c84755;
-	background: transparent;
+	background-color: transparent;
 	border-color: #c84755;
 }
 
 .area-imagem-destaque {
 	text-align: center;
+	width: 48%;
 }
 
 .imagem-destaque {
@@ -63,11 +61,12 @@
 
 /* Responsividade */
 
-/* 
-	Dispositivos bem pequenos e pequenos (celulares (pequenos e grandes) e tablets em modo retrato,
+/*
+	Dispositivos extrapequenos e pequenos (celulares (pequenos e grandes), tablets em modo retrato,
 	600px e abaixo/600px e acima)
 */
-@media only screen and (max-width: 600px), (min-width: 600px) {
+@media only screen and (max-width: 600px),
+(min-width: 600px) {
 	.conteudo-principal {
 		flex-direction: column;
 		gap: 1.5rem;
@@ -77,27 +76,17 @@
 		text-align: center;
 	}
 
-	.titulo-secao-introducao {
-		font-size: 2rem;
-	}
-
-	.texto-secao-introducao {
-		font-size: 1.2rem;
-	}
-
-	.area-botoes-secao-introducao {
+	.area-botoes-sec-introducao {
 		justify-content: center;
-	}
-
-	.botao-secao-introducao {
-		font-size: 1.1rem;
-		padding: .8rem .9rem;
 	}
 }
 
-/* Dispositivos bem pequenos (celulares pequenos, 600px e abaixo) */
+/* Dispositivos extrapequenos (celulares pequenos, 600px e abaixo) */
 @media only screen and (max-width: 600px) {
-	.secao-introducao,
+	.secao-introducao {
+		width: 100%;
+	}
+
 	.area-imagem-destaque {
 		width: 100%;
 	}
@@ -105,7 +94,10 @@
 
 /* Dispositivos pequenos (celulares grandes e tablets em modo retrato, 600px e acima) */
 @media only screen and (min-width: 600px) {
-	.secao-introducao,
+	.secao-introducao {
+		width: 70%;
+	}
+
 	.area-imagem-destaque {
 		width: 70%;
 	}
@@ -113,7 +105,10 @@
 
 /* Dispositivos médios (tablets em modo paisagem, 768px e acima) */
 @media only screen and (min-width: 768px) {
-	.secao-introducao,
+	.secao-introducao {
+		width: 60%;
+	}
+
 	.area-imagem-destaque {
 		width: 60%;
 	}
@@ -123,48 +118,19 @@
 @media only screen and (min-width: 992px) {
 	.conteudo-principal {
 		flex-direction: row;
-		gap: 4%;
-	}
-
-	.secao-introducao,
-	.area-imagem-destaque {
-		width: 48%;
+		gap: 0;
 	}
 
 	.secao-introducao {
 		text-align: left;
+		width: 48%;
 	}
 
-	.titulo-secao-introducao {
-		font-size: 2.5rem;
+	.area-botoes-sec-introducao {
+		justify-content: normal;
 	}
 
-	.texto-secao-introducao {
-		font-size: 1.4rem;
+	.area-imagem-destaque {
+		width: 48%;
 	}
-
-	.area-botoes-secao-introducao {
-		justify-content: flex-start;
-	}
-
-	.botao-secao-introducao {
-		font-size: 1.2rem;
-		padding: .9rem 1rem;
-	}
-}
-
-/* Dispositivos bem grandes (notebooks e desktops grandes, 1200px e acima) */
-@media only screen and (min-width: 1200px) {
-	.titulo-secao-introducao {
-		font-size: 3rem;
-	}
-
-	.texto-secao-introducao {
-		font-size: 1.5rem;
-	}
-
-	.botao-secao-introducao {
-		font-size: 1.3rem;
-		padding: 1rem 1.1rem;
-	}	
 }
